@@ -8,6 +8,7 @@ import Projects from './Projects.jsx';
 import NoProjectFoundPage from './NoProjectFoundPage';
 import EmailSubscribe from './projects/EmailSubscribe';
 import PricingCards from './projects/PricingCards';
+import ProductInfoCard from './projects/ProductInfoCard';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
     children: [
       { path: "email-subscription", element: <EmailSubscribe /> },
       { path: "pricing-cards", element: <PricingCards /> },
+      { path: "product-info-card", element: <ProductInfoCard /> },
     ]
   },
 ]);

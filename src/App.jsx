@@ -1,6 +1,7 @@
 import React from 'react'
 import emailSubscription from './assets/email-subscribe-thumbnail.png';
 import pricingCards from './assets/pricing-cards-thumbnail.png';
+import productInfoCard from './assets/product-modal-thumbnail.png';
 
 function App() {
 
@@ -15,6 +16,13 @@ function App() {
       projectId: "pricing-cards",
       thumbnail: pricingCards,
     }
+    ,
+    {
+      title: "Product Info Card",
+      projectId: "product-info-card",
+      thumbnail: productInfoCard,
+    }
+
   ];
 
   return (
@@ -24,10 +32,10 @@ function App() {
         {
           projects.map((proj, i) => {
             return (
-              <div key={i} className=" bg-slate-100 flex flex-col">
+              <div key={i} className="">
                 <div className="rounded-xl overflow-hidden">
                   <a href={`projects/${proj.projectId}`}>
-                    <img src={proj.thumbnail} alt='Email Subscription Project' className='object-fit' />
+                    <img src={proj.thumbnail} alt='Email Subscription Project' className='inline-block w-full aspect-square object-cover' />
                   </a>
                 </div>
                 <h3 className="p-2 text-md font-semibold text-center"><a href={`projects/${proj.projectId}`}>{proj.title}</a></h3>
