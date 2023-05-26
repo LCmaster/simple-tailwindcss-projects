@@ -19,7 +19,7 @@ function ProductInfoCard() {
                 <div className="space-y-1">
                     <p className="old-price text-xs line-through decoration-blue-950">1 599,-</p>
                     <p className="font-bold text-3xl">799,-</p>
-                    <p className='font-light text-xs '>The offer is valid until April 3 or as long as stock lasts!</p>
+                    <p className='font-light text-xs'>The offer is valid until April 3 or as long as stock lasts!</p>
                 </div>
 
                 <button className="purchase-btn primary-btn block w-full px-12 py-4 font-bold text-white bg-blue-500 border-b-4 border-b-blue-700 rounded-lg">Add to cart</button>
