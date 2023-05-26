@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 function Projects() {
     return (
-        <div className='project'>
+        <div className='project min-h-screen flex items-center justify-center bg-zinc-700'>
             <Outlet />
         </div>
     );

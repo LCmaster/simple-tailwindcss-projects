@@ -6,6 +6,7 @@ import './index.css'
 import App from './App.jsx'
 import Projects from './Projects.jsx';
 import NoProjectFoundPage from './NoProjectFoundPage';
+import EmailSubscribe from './projects/EmailSubscribe';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,9 @@ const router = createBrowserRouter([
   {
     path: "projects",
     element: <Projects />,
-    children: []
+    children: [
+      { path: "email-subscription", element: <EmailSubscribe /> },
+    ]
   },
 ]);
 
